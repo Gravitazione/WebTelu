@@ -1,0 +1,207 @@
+@import url('http://fonts.cdnfonts.com/css/charmonman');
+@import url('http://fonts.cdnfonts.com/css/charm');
+@import url('http://fonts.cdnfonts.com/css/prompt');
+
+.navbar-brand img {
+    height: 50px;
+    padding-left: 50px;  
+}
+
+.p1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.p2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.accordion-item {
+    background-color:#CC9900;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(224, 185, 77, 0.945);
+}
+
+.accordion-link {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    background-color:#CC9900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link:hover {
+    color: whitesmoke;
+}
+
+.answer {
+    max-height: 0;
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+    background:#e2c15f;
+    transition: max-height 500ms;
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 100%;
+    background-color: #CC0000;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+.accordion-item:target .answer {
+    max-height: 60rem;
+}
+
+.pfaculty {
+    font-family: 'Prompt', sans-serif;
+    color:#8b6900;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.pth {
+    font-family: 'Prompt', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.pth1 {
+    font-family: 'Prompt', sans-serif;
+    color: #8b6900;
+    font-size: 20px;
+}
+
+.p3 {
+    font-family: 'Prompt', sans-serif;
+    color: #CC9900;
+    font-size: 16px;
+}
+
+.answer p a {
+    font-family: 'Prompt', sans-serif;
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.answer p a:link {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.answer p a:hover {
+    font-family: 'Prompt', sans-serif;
+    color: wheat;
+    text-decoration: none;
+}
+
+.ptd a {
+    font-family: 'Prompt', sans-serif;
+    color:#CC9900;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.ptd a:link{
+    font-family: 'Prompt', sans-serif;
+    color: #CC9900;
+    text-decoration: none;
+}
+
+.ptd a:hover{
+    font-family: 'Prompt', sans-serif;
+    color: #725500;
+    text-decoration: none;
+}
+
+.ptd a:visited{
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+}
+
+.table-custom {
+    background-color:#CC0000;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
